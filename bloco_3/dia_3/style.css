@@ -1,0 +1,137 @@
+.caixa {
+    color: white;
+    display: inline-block;
+    line-height: 50px;
+    text-align: center;
+    vertical-align: top;
+  }
+
+  .width-and-height {
+    height: 50px;
+    width: 50px;
+  }
+
+  .padding {
+  /* insira aqui um padding de 20px na classe abaixo para aplicá-lo aos itens B, C e D */
+    padding: 20px;
+  }
+
+  .margin {
+  /* insira aqui uma margem de 30px na classe abaixo para aplicá-la aos itens C e D */
+    margin: 30px;
+  }
+
+  .border {
+  /* insira aqui uma borda com valor '5px solid black' para aplicá-la ao item D */
+    border: 5px solid black;
+  }
+
+  .super-mario {
+      width: 100px;
+      position: absolute;
+      left: 30%;
+  }
+
+  .goomba {
+      width: 100px;
+      position: absolute;
+    top: 30%;
+    left: 30%;
+  }
+
+  .baloon {
+      width: 180px;
+      position: absolute;
+    right: 28%;
+    top: 20%;
+  }
+
+  .bowser {
+      width: 140px;
+      position: absolute;
+    right: 20%;
+    top: 26.5%;
+  }
+  .word {
+    position: absolute;
+    right: 29.1%;
+    top: 22.6%;
+    font-size: 15px;
+    z-index: 2;
+  }
+  .melhoresites, .lista {
+    text-align: center;
+  }
+  .lista3:hover {
+      background-color: aqua;
+  }
+  p:active {
+      font-family: 'Courier New', Courier, monospace;
+  }
+
+  .primeiradiv {
+      background-color: red;
+  }
+  .primeiradiv:hover {
+    border: 1px solid black;
+  }
+
+  .segundadiv {
+      background-color: blue;
+  }
+  .terceiradiv {
+      background-color: green;
+  }
+  .quartadiv {
+      background-color: black;
+      color: white;
+  }
+  .quintadiv {
+      background-color: lightblue;
+  }
+  .listaordenada {
+    background-color: yellow;
+  }
+  .par {
+    color: green;
+    text-transform: uppercase;
+  }
+  h1, h2, h3 {
+    color: red;
+  }
+
+  em {
+    font-size: 40px;
+    border: 1px solid black;
+  }
+
+  li em{
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .treslinguagens {
+    color: blue;
+  }
+  .java {
+    color: red;
+  }
+  .stackoverflowlink:hover {
+    font-weight: bold;
+    color: orange;
+  }
+  .w3schoolslink:hover {
+    font-weight: bold;
+    color: green;
+  }
+  .mdnwebdocslink:hover {
+    font-weight: bold;
+    color: black;
+  }
+  .devdocsflowlink:hover {
+    font-weight: bold;
+    color: yellow;
+  }
+  .trybelink:hover {
+    font-weight: bold;
+    color: green;
+  }
