@@ -1,0 +1,16 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+@media screen and (max-width: 468px) {
+  .header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+}
