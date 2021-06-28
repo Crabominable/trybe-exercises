@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+      div {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+
+      function addH1Text() {
+        let element = document.querySelector("body");
+        let newElement = document.createElement("h1");
+        newElement.innerText = 'Exercicio 5.2 - JavaScript DOM';
+        element.appendChild(newElement);
+      }
+      addH1Text();
+
+      function addDivTagAndClass() {
+        let element = document.querySelector("body");
+        let newElement = document.createElement("div");
+        newElement.className = 'main-content';
+        element.appendChild(newElement);
+      }
+      addDivTagAndClass();
+
+      function addDivMainContent() {
+        let element = document.querySelector(".main-content");
+        let newElement = document.createElement("div");
+        newElement.className = 'center-content';
+        element.appendChild(newElement);
+      }
+      addDivMainContent();
+
+      function addTagPSomeText() {
+        let element = document.querySelector(".center-content");
+        let newElement = document.createElement("p");
+        newElement.innerText = 'A Trybe e muito legal';
+        element.appendChild(newElement);
+      }
+      addTagPSomeText();
+
+      function addTagDivClassLeftContent () {
+        let element = document.querySelector(".main-content");
+        let newElement = document.createElement("div");
+        newElement.className = 'left-content';
+        element.appendChild(newElement);
+      }
+      addTagDivClassLeftContent();
+
+      function addTagDivClassRightContent () {
+        let element = document.querySelector(".main-content");
+        let newElement = document.createElement("div");
+        newElement.className = 'right-content';
+        element.appendChild(newElement);
+      }
+      addTagDivClassRightContent();
+
+      function addImage() {
+        let element = document.querySelector(".left-content");
+        let newElement = document.createElement("img");
+        newElement.className = 'small-image';
+        newElement.src = 'https://picsum.photos/200';
+        element.appendChild(newElement);
+      }
+      addImage();
+
+      function addList() {
+        let element = document.querySelector(".right-content");
+        let newElement = document.createElement("ul");
+        let array = ['1', '2', '3', '4', '5', '6', '7', '8', '9'];
+        element.appendChild(newElement);
+        for (let index = 0; index < array.length; index += 1) {
+          newListElement = document.createElement("li");
+          newListElement.innerText = array[index];
+          newElement.appendChild(newListElement);
+        }
+      }
+      addList();
+
+      function addH3Tags() {
+        let element = document.querySelector(".main-content");
+        for (let index = 0; index < 3; index += 1) {
+          let newElement = document.createElement("h3");
+          element.appendChild(newElement);
+        }
+      }
+      addH3Tags();
+
+      function addClassTitleH1() {
+        let element = document.querySelector("h1");
+        element.className = 'title';
+      }
+      addClassTitleH1();
+
+      function addClassDescriptionH3() {
+        let element = document.querySelectorAll("h3");
+        for (let index = 0; index < element.length; index += 1) {
+          element[index].className = 'description'; 
+        }
+      }
+      addClassDescriptionH3();
+    </script>
+  </body>
+</html>
