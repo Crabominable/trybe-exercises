@@ -1,1 +1,1 @@
-A Trybe e um curso de desenvolvimento web o qual me fara desenvolver diversos trabalhos e competências 
+Diretório referente a exercícios disponíveis nos dias de conteúdo da escola de programação TRYBE!!
